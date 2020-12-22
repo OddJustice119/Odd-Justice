@@ -1,0 +1,87 @@
+/* Dialogue classes for characters when they speak or type*/
+p1.kelly { color: #7030D9;}
+
+p1.kirk { color: #0070c0;}
+ 
+p1.paula { color: #00c44e;}
+
+p1.tony { color: #c00000;}
+
+/*Character hyperlinks*/
+
+    /* paula hyperlink*/
+
+        a.paula:visited {
+        color: blue;
+        }
+        a.paula:hover {
+        color: #00c44e;
+        }
+
+    /*Kirk hyperlink*/
+
+        a.kirk:visited {
+        color: blue;
+        }
+        a.kirk:hover {
+            color: #0070c0;
+        }
+
+    /*Kelly hyperlink*/
+
+        a.kelly:visited {
+        color: blue;
+        }
+        a.kelly:hover {
+            color: #7030D9;
+        }
+
+    /*Tony hyperlink*/
+
+        a.Tony:visited {
+        color: blue;
+        }
+        a.Tony:hover {
+            color: #C00000;
+        }
+
+
+/*default website styles*/
+
+    h1 {
+        font-size: 2em;
+    }
+
+    body {
+    text-align: justify;
+    width: 650px;
+    }
+
+    body {
+    display: block;
+    margin:  auto;
+    }
+
+    p {
+    font-family: "noto sans", sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+    text-indent: hanging;
+    }
+
+    p.diskype{
+    font-family: "open sans", sans-serif;
+    font-size: 1.2em;
+    }
+
+    p.sms {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    }
+
+/*image placement*/
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
