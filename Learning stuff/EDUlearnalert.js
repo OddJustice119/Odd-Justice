@@ -13,5 +13,5 @@ user= 'John';
 
 
 
-alert (testvariable, age, John) //This uses what is contained in testvariable
+alert (testvariable) //This uses what is contained in testvariable
 
