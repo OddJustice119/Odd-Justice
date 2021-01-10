@@ -1,6 +1,6 @@
 /*This is basically just test code*/
 
-//"use strict"; //This disables classes and modules and probably will not be needed later
+//"use strict"; //This disables classes and modules and probably will not be needed out of lessons
 
 alert(' Yo whats up');
 alert('Holy bababa');
