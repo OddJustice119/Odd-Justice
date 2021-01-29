@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Press+Start+2P&family=Prompt:ital,wght@0,300;0,600;1,300;1,400;1,600&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,700&display=swap'); /*Source Serif Pro, Prompt,Press Start 2P, Lalezar*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    background-color: black;    
+}
+
+/*Gets rid of purple when something is already clicked on*/
+
+a:link {
+    color: #ff9f51;
+}
+a:visited {
+    color: #ff9f51;
+}
+
+
+/*Controls the navbar*/
+
+header {
+    margin-top: 0em;
+    left: 0;
+    right:0;
+    font-size: 1em
+}
+
+nav ul {
+    margin: 0;
+    Padding: 1.5em;
+}
+
+
+nav li {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 1em;
+    text-align: center;
+}
+
+nav a {
+    text-transform: uppercase;
+    font-size: .8em;
+    font-family: 'Press Start 2P', cursive;
+    padding: 0;
+    width: 100%;
+}
+
+img.banner {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.container div {
+    margin:0 auto;
+    width: 95%;
+    text-align: center;
+}
