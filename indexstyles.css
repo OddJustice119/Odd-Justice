@@ -8,18 +8,19 @@ body {
     margin: 0;
     font-family: 'Prompt', sans-serif;
     font-size: 1.2em;
+    font-weight: 400;
     text-align: center;
-    color: white;
-    background-color: black;    
+    color: rgb(0, 0, 0);
+    background-color: rgb(184, 184, 184);    
 }
 
 /*Gets rid of purple when something is already clicked on*/
 
 a:link {
-    color: #ff9f51;
+    color: #f17e1f;
 }
 a:visited {
-    color: #ff9f51;
+    color: #f17e1f;
 }
 
 
@@ -60,8 +61,28 @@ img.banner {
     margin: 0;
 }
 
-.container div {
+.container {
     margin:0 auto;
     width: 95%;
     text-align: center;
+}
+
+.button {
+    display: inline-block; 
+    font-size: 1em;
+    text-transform: ;
+}
+
+ .juno-color {
+     font-size: 2em,;
+     font-weight: 500;
+     background: -webkit-linear-gradient(Left, #C30000,#7300c0,#7300c0, #0287e6);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+.juno-color:hover,
+.juno-color:focus {
+    background: -webkit-linear-gradient(Left, #C30000,#7300c0,#7300c0, #0287e6);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
