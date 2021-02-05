@@ -11,16 +11,20 @@ body {
     font-weight: 400;
     text-align: center;
     color: rgb(0, 0, 0);
-    background-color: rgb(184, 184, 184);    
+    background-color: rgb(156, 123, 149);    
+}
+
+.allsite{
+    display: grid;
 }
 
 /*Gets rid of purple when something is already clicked on*/
 
 a:link {
-    color: #f17e1f;
+    color: gold;
 }
 a:visited {
-    color: #f17e1f;
+    color: gold;
 }
 
 
@@ -43,25 +47,26 @@ nav li {
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
-    margin: 1em;
-    text-align: center;
+    margin: 0em;
+    border: orange;
 }
 
 nav a {
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: .9em;
     font-family: 'Press Start 2P', cursive;
-    padding: 0;
+    padding: .8em;
     width: 100%;
 }
 
-img.banner {
+img {
     max-width: 100%;
     height: auto;
     margin: 0;
 }
 
-.container {
+/*This will make phone sections not be aligned to the edge of the screen*/
+.containerforphone {
     margin:0 auto;
     width: 95%;
     text-align: center;
@@ -86,3 +91,8 @@ img.banner {
     -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.SelectaDemo {
+
+}
+
