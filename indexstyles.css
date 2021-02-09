@@ -14,10 +14,6 @@ body {
     background-color: rgb(156, 123, 149);    
 }
 
-.allsite{
-    display: grid;
-}
-
 /*Gets rid of purple when something is already clicked on*/
 
 a:link {
@@ -39,12 +35,13 @@ header {
 
 nav ul {
     margin: 0;
-    Padding: 1.5em;
+    Padding: 0em;
 }
 
 
 nav li {
-    display: inline-block;
+    display: grid;
+    
     margin-left: auto;
     margin-right: auto;
     margin: 0em;
@@ -78,6 +75,7 @@ img {
     text-transform: ;
 }
 
+/*Juno color stuff*/
  .juno-color {
      font-size: 2em,;
      font-weight: 500;
@@ -95,4 +93,18 @@ img {
 .SelectaDemo {
 
 }
+.wrapper{
+    display: grid;
+    grid-template-columns: ;
+}
 
+.wrapper > div{
+    background:
+}
+.wrapper > div:nth-child(odd){
+    background:
+}
+
+.wholesite {
+    grid-template-columns: 100% 50% 50%;
+}

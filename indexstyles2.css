@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Press+Start+2P&family=Prompt:ital,wght@0,300;0,600;1,300;1,400;1,600&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,700&display=swap'); /*Source Serif Pro, Prompt,Press Start 2P, Lalezar*/
+
+*{
+box-sizing: border-box;
+}
+
+
+
+
+.indexgrid{
+    display: grid;
+    grid-gap: 25px;
+    margin: 25px auto;
+    background-color: rgb(156, 123, 149);
+    grid-template-columns: 100%;
+}
+
+nav{
+
+    font-family: 'Press start 2P', Haettenschweiler, sans-serif;
+} 
+
+.bannerimg{
+    max-width: 100%;
+    margin: 0;
+}
+
+a:link {
+    color: gold;
+}
+a:visited {
+    color: gold;
+}
+
+.welcome{
+
+}
+
+/*Juno color stuff*/
+.juno-color {
+    font-size: 2em,;
+    font-weight: 500;
+    background: -webkit-linear-gradient(Left, #C30000,#7300c0,#7300c0, #0287e6);
+   -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.juno-color:hover,
+.juno-color:focus {
+   background: -webkit-linear-gradient(Left, #C30000,#7300c0,#7300c0, #0287e6);
+   -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
