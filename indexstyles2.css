@@ -3,29 +3,66 @@
 
 *{
 box-sizing: border-box;
+background-color: rgb(156, 123, 149);
+margin: 0;
+border: lawngreen;
+border-width: 1px;
+border-style: solid;
 }
 
 
 
 
-.indexgrid{
-    display: grid;
-    grid-gap: 25px;
-    margin: 25px auto;
-    background-color: rgb(156, 123, 149);
-    grid-template-columns: 100%;
+
+/*GRID STUFF*/
+
+@media (min-width: 500px) {
+    .indexgrid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 
+    }
+}
+
+
+
+.bannerimage{
+    grid-area: bannerimage;
+    grid-column: 2fr;
+    grid-row: 0;
 }
 
 nav{
-
+    grid-column:  ;
+    grid-area: nav;
     font-family: 'Press start 2P', Haettenschweiler, sans-serif;
 } 
 
-.bannerimg{
-    max-width: 100%;
-    margin: 0;
+.welcome{
+    grid-area: welcome;
 }
 
+.description{
+    grid-area: description;
+}
+
+.selectprompt{
+    grid-area: selectprompt;
+}
+
+.pickjuno{
+    grid-area: pickjuno;
+}
+
+.about{
+    grid-area: about;
+}
+
+footer{
+    grid-area: footer;
+}
+
+
+/*generic stuff*/
 a:link {
     color: gold;
 }
@@ -33,9 +70,7 @@ a:visited {
     color: gold;
 }
 
-.welcome{
 
-}
 
 /*Juno color stuff*/
 .juno-color {
