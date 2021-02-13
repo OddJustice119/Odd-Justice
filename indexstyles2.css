@@ -8,9 +8,9 @@
 /* Layout styles -----------------------------------*/
 /*mobile site*/
 
-@media (min-width: 500px) {
+@media (min-width: 620px) {
     main {
-      column-count: 2;
+      column-count: 1;
       column-gap: 20px;
     }
     
@@ -19,64 +19,157 @@
     }
   }
   
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
+  @media (min-width: 960px) {
+    main {
+       column-count: 3;
+    }
+  }
 
 
 /*desktop*/
 
+
 body{
-    color: black;
-    background-color: #8f6584;
+    background: #b9895c;
     font-family: "Source Serif Pro", "Times new roman", serif;
+    font-size: 2em;
 }
 
 main {
-    max-width: 960;
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 20px auto;
+    column-count: 1;
+    background-color: #b9895c;
+}
+
+section {
+    border-radius: 3px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 
 .bannerimage{
     grid-area: bannerimage;
-    grid-column: auto;
+    grid-column: span 2fr;
     grid-row: 0;
+}
+
+.topsection{
     padding: 0;
 }
 
 .navigation{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-    border-top: 3px solid;
-    background-color: white;
+    align-items: center;  
+    padding: 16px;
+    margin:0;
+    overflow: hidden;
+    border: 2px solid gold;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-color: gold;
+    border-bottom-color: gold;
+    background-color: rgb(255, 123, 36);
 } 
 
 .navlist{
     text-decoration: none;
-    font-size: .9em;
+    font-size: .85em;
     font-family: 'Press start 2P', Haettenschweiler, sans-serif;
+    float: left;
+    position: relative;
 }
+
+@media (min-width: 620px) {
+    .navlist {
+      font-size: 1.2em;
+    }
+  }
+
+.divider {
+    position: absolute;
+    right: -1em;
+    top: 0.01em;
+    color: gold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media (min-width: 620px){
+.divider {
+    position: absolute;
+    right: -1.5em;
+    top: 0.01em;
+    color: gold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+}
+
+@media (min-width: 620px){
+.divider {
+    position: absolute;
+    right: -1.5em;
+    top: 0.01em;
+    color: gold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+}@media (min-width: 960px){
+    .divider {
+        position: absolute;
+        right: -4em;
+        top: 0.01em;
+        color: gold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    }
+
+a:link {
+    color: gold;
+}
+
+a:visited {
+    color: gold;
+}
+
+a:hover {
+    color: rgb(45, 226, 250);
+    text-decoration: underline;
+}
+
 
 .welcome{
     grid-area: welcome;
+}
+
+.oddjustice {
+    
 }
 
 .description{
     grid-area: description;
 }
 
+
+
 .selectprompt{
     grid-area: selectprompt;
+    align-items: center;
 }
 
-.pickjuno{
-    grid-area: pickjuno;
-}
+.episodeimage {
+    display: block;
+    width: 100%;
+    object-fit: contain;
+ }
+ 
+ .pickepisode{
+     grid-area: pickepisode;
+     grid-template-columns: 0;
+ }
 
 .about{
     grid-area: about;
@@ -88,12 +181,7 @@ footer{
 
 
 /*generic stuff*/
-a:link {
-    color: gold;
-}
-a:visited {
-    color: gold;
-}
+
 
 
 
@@ -111,3 +199,4 @@ a:visited {
    -webkit-background-clip: text;
  -webkit-text-fill-color: transparent;
 }
+
