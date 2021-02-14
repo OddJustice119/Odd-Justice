@@ -6,27 +6,21 @@
 /*GRID STUFF*/
 
 /* Layout styles -----------------------------------*/
-/*mobile site*/
+
+/*desktop site*/
 
 @media (min-width: 620px) {
     main {
       column-count: 1;
       column-gap: 20px;
     }
-    
+}
+  
     section {
       break-inside: avoid;
     }
-  }
-  
-  @media (min-width: 960px) {
-    main {
-       column-count: 3;
-    }
-  }
 
-
-/*desktop*/
+/*mobile*/
 
 
 body{
@@ -36,11 +30,10 @@ body{
 }
 
 main {
-    max-width: 1600px;
+    max-width: 1470px;
     margin: 0 auto;
     padding: 20px 20px auto;
-    column-count: 1;
-    background-color: #b9895c;
+    background-color: #b8783c;
 }
 
 section {
@@ -50,38 +43,50 @@ section {
     overflow: hidden;
 }
 
-
-.bannerimage{
-    grid-area: bannerimage;
-    grid-column: span 2fr;
-    grid-row: 0;
-}
-
 .topsection{
     padding: 0;
 }
 
+
 .navigation{
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     justify-content: space-around;
     align-items: center;  
-    padding: 16px;
+    padding: 0px;
     margin:0;
     overflow: hidden;
-    border: 2px solid yellow;
-    border-top: solid;
-    border-bottom: solid;
+    border: 6px solid yellow;
+    border-top: 6px solid; 
+    border-bottom: 6px solid;
     border-top-color: yellow;
     border-bottom-color: yellow;
-    background-color: rgb(255, 123, 36);
 } 
+
+
+
+.navigation > a:link {
+    color: yellow;
+}
+
+.navigation > a:visited {
+    color: yellow;
+}
+
+.navigation a:hover {
+    color: rgb(45, 226, 250);
+    text-decoration: underline;
+}
 
 .navlist{
     text-decoration: none;
-    font-size: .85em;
+    text-align: center;
+    font-size: 1em;
     font-family: 'Press start 2P', Haettenschweiler, sans-serif;
     float: left;
     position: relative;
+    background-color: rgb(255, 123, 36);
+    padding: 1em;
 }
 
 @media (min-width: 620px) {
@@ -90,55 +95,7 @@ section {
     }
   }
 
-.divider {
-    position: absolute;
-    right: -1em;
-    top: 0.01em;
-    color: yellow;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-@media (min-width: 620px){
-.divider {
-    position: absolute;
-    right: -1.5em;
-    top: 0.01em;
-    color: yellow;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-}
-
-@media (min-width: 620px){
-.divider {
-    position: absolute;
-    right: -1.5em;
-    top: 0.01em;
-    color: yellow;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-}@media (min-width: 960px){
-    .divider {
-        position: absolute;
-        right: -4em;
-        top: 0.01em;
-        color: yellow;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    }
-
-a:link {
-    color: yellow;
-}
-
-a:visited {
-    color: yellow;
-}
-
-a:hover {
-    color: rgb(45, 226, 250);
-    text-decoration: underline;
-}
+/*End of Navigation Bar*/
 
 
 .welcome{
