@@ -1,6 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Press+Start+2P&family=Prompt:ital,wght@0,300;0,600;1,300;1,400;1,600&family=Source+Serif+Pro:ital,wght@0,400;0,600;1,400;1,700&display=swap'); /*Source Serif Pro, Prompt,Press Start 2P, Lalezar*/
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+/*
+font-family: 'Source Code Pro', monospace;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&family=Fugaz+One&family=Libre+Barcode+39+Extended+Text&family=Righteous&family=Rowdies:wght@300;400&family=Share:ital,wght@0,400;0,700;1,400;1,700&family=Trade+Winds&display=swap'); 
+/*
+font-family: 'Contrail One', cursive;
+font-family: 'Fugaz One', cursive;
+font-family: 'Libre Barcode 39 Extended Text', cursive;
+font-family: 'Righteous', cursive;
+font-family: 'Rowdies', cursive;
+font-family: 'Share', cursive;
+font-family: 'Trade Winds', cursive;
+*/
 
 
 /*GRID STUFF*/
@@ -9,13 +24,6 @@
 
 /*desktop site*/
 
-@media (min-width: 620px) {
-    main {
-      column-count: 1;
-      column-gap: 20px;
-    }
-}
-  
     section {
       break-inside: avoid;
     }
@@ -29,12 +37,21 @@ body{
     font-size: 2em;
 }
 
+
 main {
     max-width: 1470px;
     margin: 0 auto;
     padding: 20px 20px auto;
     background-color: #b8783c;
 }
+
+@media (min-width: 620px) {
+    main {
+      column-count: 1;
+      column-gap: 20px;
+    }
+}
+
 
 section {
     border-radius: 3px;
@@ -99,34 +116,74 @@ section {
 
 
 .welcome{
-    grid-area: welcome;
+    margin: 1em;
 }
 
+
 .oddjustice {
-    
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
 }
 
 .description{
     grid-area: description;
+    font-size: 1.6em;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
 }
 
 
 
-.selectprompt{
+.selectprompt {
     grid-area: selectprompt;
+    grid-template-columns: 100%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+/*animation for the triangle pointers*/
+.pointers {
+    display: inline-block;
+    position: relative;
+    animation: shaking .05s infinite alternate;
+    animation-timing-function: steps(3);
+    font-size: 1.3em;
+}
+
+
+@keyframes shaking {
+    from {
+        transform: translateY(2px);
+    }
+
+    to{
+        transform: translateY(-3px);
+    }
+}
+
+
+.pickepisode{
+    grid-area: pickepisode;
     align-items: center;
+    text-align: center;
+    margin: 2em;
+    grid-template-columns: 0;
 }
 
 .episodeimage {
     display: block;
-    width: 100%;
+    width: 90%;
     object-fit: contain;
  }
  
- .pickepisode{
-     grid-area: pickepisode;
-     grid-template-columns: 0;
- }
+.episodejunolabel {
+    text-align: center;
+
+}
+
 
 .about{
     grid-area: about;
