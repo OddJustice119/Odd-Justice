@@ -176,8 +176,8 @@ section {
 
 
 .episodecontainer {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding-top: 40px;
@@ -185,8 +185,10 @@ section {
     border-radius: 30px;
     border-style: solid;
     position: relative;
+    border-color: yellow;
+    border-width: 5px;
     background:
-    -webkit-linear-gradient(top, #8ad2e4,#bbdee7);
+    -webkit-linear-gradient(top ,#a4d2dd, #ffffff);
 }
 
 .episodeimage {
@@ -198,10 +200,11 @@ section {
  }
  
 .episodejunolabel {
+
     text-align: center;
     font-weight: 400;
-    font-size: 2.5em;
-    word-spacing: 1.1em;
+    font-size: 2.3em;
+    word-spacing: 1.1rem;
     font-family: 'Trade Winds', cursive;
 }
 
@@ -216,9 +219,10 @@ section {
 
 .junobuttontext{
     letter-spacing: 0em;
-    padding: 14px;
+    padding: 30px;
     word-spacing: -.2em;
-    font-size: 1.3rem;font-family: 'Source Code Pro', monospace;
+    font-size: 1.3rem;
+    font-family: 'Source Code Pro', monospace;
     padding-top: 24px;
     padding-bottom: 24px;
     border-color: black;
