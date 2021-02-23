@@ -39,7 +39,7 @@ body{
 
 
 main {
-    max-width: 1470px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 20px 20px auto;
     background-color: #ff9c40;
@@ -80,6 +80,12 @@ section {
     border-bottom-color: yellow;
 } 
 
+@media (min-width: 620px){
+    .navigation {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
 
 
 .navigation > a:link {
@@ -121,8 +127,16 @@ section {
 
 
 .oddjustice {
+    font-size: 3em;
     font-family: 'Fugaz One', cursive;
     text-align: center;
+
+}
+
+@media (min-width: 620px) {
+    .oddjustice{
+        font-size: 5em;
+    }
 }
 
 .description{
@@ -133,7 +147,12 @@ section {
     font-family: 'Source Code Pro', monospace;
 }
 
-
+@media (min-width: 620px) {
+    .description{
+        font-size: 1.9em;
+        margin-top: 50px;
+    }
+}
 
 .selectprompt {
     grid-area: selectprompt;
@@ -145,13 +164,21 @@ section {
     
 }
 
+@media (min-width: 620px) {
+    .selectprompt {
+    font-size: 2em;
+    margin-top: 20px;
+    }
+}
+
+
 /*animation for the triangle pointers*/
 .pointers {
     display: inline-block;
     position: relative;
     animation: shaking .05s infinite alternate;
     animation-timing-function: steps(3);
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 
@@ -167,6 +194,7 @@ section {
 
 
 .pickepisode{
+    display: grid;
     margin-top: 20px;
     background-color:#dd8e44;
     align-items: center;
@@ -174,8 +202,15 @@ section {
     grid-template-columns: 1;
 }
 
+@media (min-width: 620px) {
+    .pickepisode {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+}
 
-.episodecontainer {
+
+.junoepisodecontainer {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
@@ -191,6 +226,36 @@ section {
     -webkit-linear-gradient(top ,#a4d2dd, #ffffff);
 }
 
+.jillepisodecontainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+    border-style: solid;
+    position: relative;
+    border-color: yellow;
+    border-width: 5px;
+}
+
+.fairyepisodecontainer {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 30px;
+    border-style: solid;
+    position: relative;
+    border-color: yellow;
+    border-width: 5px;
+}
+
+
+
 .episodeimage {
     display: block;
     width: 100%;
@@ -199,7 +264,7 @@ section {
     padding-bottom: 40px;
  }
  
-.episodejunolabel {
+.episodelabel {
 
     text-align: center;
     font-weight: 400;
@@ -208,16 +273,17 @@ section {
     font-family: 'Trade Winds', cursive;
 }
 
-.junobutton{
+.button{
     border-radius: 30px;
 }
 
-.junobutton:hover{
+.button:hover{
     filter: saturate(150%);
     font-weight: 700;
+    border-color: rgb(45, 110, 250);
 }
 
-.junobuttontext{
+.buttontext{
     letter-spacing: 0em;
     padding: 30px;
     word-spacing: -.2em;
@@ -232,12 +298,12 @@ section {
 }
 
 
-
 .about{
     grid-area: about;
     font-family: 'Source Code Pro', monospace;
+    text-align: center;
     font-weight: 500;
-    font-size: 1.2em
+    font-size: 1.3em
 }
 
 footer{
